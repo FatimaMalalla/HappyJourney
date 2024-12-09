@@ -49,8 +49,7 @@ namespace HappyJourneyTicketBooking
 
         private void Settings_Button_Click(object sender, EventArgs e)
         {
-            new Settings().Show();
-            this.Close();
+      
         }
 
         private void label2_Click(object sender, EventArgs e)

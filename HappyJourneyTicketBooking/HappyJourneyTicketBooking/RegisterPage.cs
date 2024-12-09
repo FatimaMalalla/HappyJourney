@@ -39,11 +39,12 @@ namespace HappyJourneyTicketBooking
 
         private void CreateAccount_Click(object sender, EventArgs e)
         {
+            String txtUsername =  txtFName.Text + " " + txtLName.Text;
             // Validation logic
-            if (string.IsNullOrWhiteSpace(txtName.Text) ||
+            if (string.IsNullOrWhiteSpace(txtFName.Text) ||
                 string.IsNullOrWhiteSpace(txtEmail.Text) ||
                 string.IsNullOrWhiteSpace(txtPhoneNumber.Text) ||
-                string.IsNullOrWhiteSpace(txtUsername.Text) ||
+                string.IsNullOrWhiteSpace(txtUsername) ||
                 string.IsNullOrWhiteSpace(txtPassword.Text) ||
                 string.IsNullOrWhiteSpace(txtConfirmPassword.Text))
             {
